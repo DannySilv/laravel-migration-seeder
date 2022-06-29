@@ -29,7 +29,7 @@ class TrainsTableSeeder extends Seeder
             $train -> arrival_station = $faker -> city();
             $train -> departure_hour = $faker -> time('H:i');
             $train -> arrival_hour = $faker -> time('H:i');
-            $train -> departure_day = $faker -> dateTimeInInterval('-10 day', '+10 days');
+            $train -> departure_day = $faker -> dateTimeInInterval('-1 day', '+10 days');
             $train -> train_code = $faker -> regexify('[A-Z]{4}[0-9]{4}');
             $train -> wagons_number = $faker -> numberBetween(2, 20);
             $train -> on_time = $faker -> boolean();
